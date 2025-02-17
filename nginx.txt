@@ -1,0 +1,23 @@
+1. check status 
+- systemctl status nginx # Kiểm tra trạng thái
+2. start nginx
+- systemctl start nginx   # Khởi động Nginx
+3. stop nginx
+- systemctl stop nginx    # Dừng Nginx
+4. restart nginx
+-systemctl restart nginx # Khởi động lại Nginx
+5. reload nginx
+- systemctl reload nginx
+6. Check for syntax errors in the configuration file
+- nginx -t # Kiểm tra lỗi cú pháp trong file cấu hình
+7. View error and access logs  #Xem nhật ký lỗi và truy cập
+tail -f /var/log/nginx/error.log    # Xem log lỗi
+tail -f /var/log/nginx/access.log   # Xem log truy cập
+8. #Xem danh sách các worker process của Nginx
+- ps aux | grep nginx
+9. stop all nginx #Dừng tất cả tiến trình Nginx
+- nginx -s stop
+10. #Khởi động lại Nginx nếu bị treo
+- killall -9 nginx && systemctl start nginx
+11. #Chỉnh sửa file cấu hình chính của Nginx
+- nano /etc/nginx/nginx.conf
