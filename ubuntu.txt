@@ -1,0 +1,11 @@
+#ubuntu 
+1. Enter folder
+- cd ../..
+2. Detele file folder 
+- sudo rm -rf <fileName>
+3. check the total of disk space
+- df -h --total
+4. view file 
+- cat <fileName>
+5. change file 
+- sudo nano <fileName>
