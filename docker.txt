@@ -6,4 +6,22 @@
 - sudo docker images
 3. logs docker container 
 - sudo docker logs <conatiner_ID>
-4. 
+4. Run container new
+- sudo docker run -d --name my_container nginx
+5. Delete container
+- sudo docker rm my_container   # Xóa container (phải dừng trước)
+- sudo docker rm -f my_container  # Xóa container ngay cả khi đang chạy
+6. Access to running containers
+- sudo docker exec -it my_container bash
+  + it: Chạy chế độ interactive (giống SSH)
+  + bash: Mở terminal bên trong container
+7. Manage Network
+  a. List network
+    - docker network ls
+  b. Create network
+    - docker network create my_network
+  c. connect container in network
+    - docker network connect my_network my_container
+8. Docker Compose
+- docker-compose up -d  # Chạy tất cả services trong docker-compose.yml
+- docker-compose down   # Dừng và xóa container, network liên quan
