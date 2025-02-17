@@ -1,0 +1,9 @@
+#Docker 
+1. List container
+- sudo docker ps -a 
+- sudo docker ps 
+2. List image 
+- sudo docker images
+3. logs docker container 
+- sudo docker logs <conatiner_ID>
+4. 
