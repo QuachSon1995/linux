@@ -9,3 +9,5 @@
 - cat <fileName>
 5. change file 
 - sudo nano <fileName>
+6. pushlish port
+- sudo ufw allow 3000
